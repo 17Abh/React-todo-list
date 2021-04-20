@@ -16,7 +16,8 @@ class ToDoInput extends Component {
 
                         <input type="text" className="form-control" placeholder="add task here" value={item} item={item}  onChange={handleChange} />
                     </div>
-                    <button type="submit" 
+                    <button disabled={!item}
+                     type="submit" 
                     className={editItem ? "btn btn-block btn-success mt-3" : "btn btn-block btn-dark mt-3"} >
                         {editItem ? 'Edit Task' : 'Add Task'}</button>
                 </form>

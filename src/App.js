@@ -34,7 +34,7 @@ class App extends Component {
       title:this.state.item
     };
 
-    console.log(newItem)
+  //  console.log(newItem)
 
     const updateItems = [...this.state.items,newItem] ;
     
